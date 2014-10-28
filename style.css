@@ -1,0 +1,350 @@
+/*
+Theme Name: EL
+Theme URI: http://eddieli.org
+Description: Eddie Li's own wordpress theme
+Author: Eddie Li
+Author URI: http://eddieli.org
+Version: 1.0
+Tags: responsive, white, bootstrap
+
+License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+License URI: http://creativecommons.org/licenses/by-sa/3.0/
+
+*/
+
+.header .bottom-nav
+{
+	background-color: #f9f9f9;
+	border-bottom: 1px solid #eeeeee;
+	position: relative;
+	padding-bottom: 2px;
+}
+
+.header .bottom-nav:before{
+	content: '';
+	position: absolute;
+	height: 7px;
+	bottom: -7px;
+	left: 0;
+	background: url(img/shadow.png) no-repeat top center;
+	width: 100%;
+}
+.clear-both{
+	clear:both;
+}
+
+.navbar-inverse{
+	border:none;
+}
+	.navbar-inverse .navbar-nav>li>a:hover{
+		/* Overwrite bootstrap CSS 0717*/
+		color:black;
+	}
+
+
+
+.align-left{text-align: left;}
+.align-center{text-align: center;}
+.align-right{text-align: right;}
+	
+
+@media (min-width: 760px) {
+	/* for tablet and desktop*/
+	.body{
+		margin-top: 99px;
+	}
+
+	#content{
+		margin-top: 1%;
+	}
+
+	h3, .heading .glyphicon{
+		font-size: 1.5em;
+	}
+	p{
+		font-size: 1em;
+	}
+	.glyphicon-search{
+		left: 20px;
+	}
+
+}
+@media (max-width: 760px) {
+	/* for mobile*/
+	.body{
+		margin-top: 35px;
+	}
+	#content{
+		margin-top: 0px;
+	}
+	h3, .heading .glyphicon{
+		font-size: 1.2em;
+	}
+	p{
+		font-size: 0.9em;
+	}
+
+	.glyphicon-search {
+		left: 5px;
+		top: 27px;
+	}
+}
+
+@media (max-width: 460px) {
+	/* for mobile*/
+
+	h3,.heading .glyphicon{
+		font-size: 0.8em;
+	}
+	p{
+		font-size: 0.7em;
+	}
+
+}
+body{
+	background-image: url(img/cardboard_flat.png);
+	font-family: 'Roboto';
+	color:#4c4c4c;
+}
+
+body #banner{
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	overflow: hidden;
+}
+
+a{
+	color:#4c4c4c;
+}
+
+a:hover {
+	text-decoration: none ;
+	color: #339999;
+}
+
+.entry h3{
+	background-color:#d9534f;
+	color:white;
+	margin-left: -50px;
+	padding: 10px 10px 10px 50px;
+	margin-right: 10%;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+
+/*Heading style*/
+.heading{
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+/*POST STYLE*/
+
+#recent-posts article .post, .search-result article, #category .article .post{
+	border: 1px solid #e5e5e5;
+	background-color: #fff;
+	border-bottom: 1px solid #f7f7f7;
+	padding: 10px;
+	margin-bottom: 10px;
+	float:left;
+}
+	#category .content{
+		margin-top: 30px;
+	}
+
+	#category .article{
+		padding: 0;
+	}
+	#recent-posts article .thumb{
+		float:left;
+		margin-right: 28px;
+		position: relative;
+		line-height: 0;
+		width:128px;
+		height:128px;
+	}
+
+	#recent-posts article .post-content{
+		float:left;
+
+	}
+	#recent-posts article .post-content:before{
+		content: '';
+		position: absolute;
+		height: 8px;
+		bottom: -20px;
+		left: 0;
+		background: url(img/middle-shadow.png) no-repeat top center;
+		width: 100%;
+	}
+		small{
+			color: #b8b8b8;
+			text-decoration: none;
+		}
+
+/*overwrite bootstrap border for thumbnails*/
+.thumbnail{
+	border:0px;
+}
+
+/*single page style*/
+.entry{
+	border: 2px solid #e5e5e5;
+	background-color: #fff;
+	border-bottom: 1px solid #f7f7f7;
+	padding: 10px;
+	margin-top: 30px;
+}
+.entry:before{
+	content: '';
+	position: absolute;
+	height: 8px;
+	bottom: -10px;
+	left: 0;
+	background: url(img/middle-shadow.png) no-repeat top center;
+	width: 100%;
+}
+
+/*glyphicon style*/
+
+.heading .glyphicon, .heading h3{
+	margin-top: 10px;
+	top:0;
+	float:left;
+}
+
+
+.navbar-form input{
+	padding-left: 20px;
+}
+/*glyphicon style*/
+
+#banner .bottom-title{
+	position: absolute;
+	bottom: 0;
+}
+#banner img{
+	position: absolute;
+	width: 100%;
+	z-index: 5;
+}
+
+#banner-title{
+	position: absolute;
+	z-index: 6;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#banner-title .title h3, #banner-title .title p{
+	position: relative;
+	text-align: center;
+	color: white;
+}
+article .thumbnail {
+	margin-top: 20px;
+}
+
+
+/*Side bar style*/
+.sidebar{
+	border: 2px solid #e5e5e5;
+	background-color: #fff;
+	border-bottom: 1px solid #f7f7f7;
+	padding: 10px;
+	margin-top: 30px;
+	float:left;
+}
+.sidebar:before{
+	content: '';
+	position: absolute;
+	height: 8px;
+	bottom: -10px;
+	left: 0;
+	width: 100%;
+}
+
+.sidebar ul{
+	list-style-type: none;
+}
+
+.sidebar .widgettitle span{
+	margin-right: 10px;
+}
+#carousel-generic img{
+	width: 100%;
+}
+#carousel-generic .item-content .carousel-caption{
+	background-color: rgba(0,0,0,0.6);
+	left: 0;
+	right:0;
+	bottom: 120px;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+/*pagination style*/
+
+.pagination {
+max-width: 750px;
+padding: 0 0 10px 0;
+margin: 0 auto;
+float:right;
+}
+
+.pagination span, .pagination a {
+	float: left;
+	height: 35px;
+	width: 35px;
+	line-height: 34px;
+	text-align: center;
+	padding: 0;
+	border-radius: 100px;
+	margin-right: 3px;
+	box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.2);
+	background-color: #fff;
+}
+
+.pagination a:hover{
+	background-color: #F9F9DA;
+}
+
+.pagination .current{
+	float: left;
+	height: 35px;
+	width: 35px;
+	line-height: 34px;
+	text-align: center;
+	padding: 0;
+	border-radius: 100px;
+	margin-right: 3px;
+	box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.2);
+	background-color: #F9F9DA;
+}
+
+/*pagination style ends*/
+
+#carousel-generic .item-content a{
+	color: white;
+	text-decoration: none;
+}
+
+#carousel-generic .carousel-control{
+	z-index: 999;
+}
+
+/*progress bar style*/
+
+.footer .bottom-navbar{
+	margin-top: 20px;
+	padding-top: 20px;
+	margin-bottom: 0px;
+	height:auto !important; /* overwrite navbar-inverse which appends 1px height to it*/
+}
+
+
+
